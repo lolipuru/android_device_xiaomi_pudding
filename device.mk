@@ -18,7 +18,8 @@ PRODUCT_PACKAGES += \
 
 # Euicc
 PRODUCT_PACKAGES += \
-    XiaomiEuicc
+    XiaomiEuicc \
+    XiaomiEsimSwitcher
 
 # Overlays
 PRODUCT_PACKAGES += \

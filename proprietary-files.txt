@@ -1575,6 +1575,9 @@ odm/etc/libnfc-nci.conf:vendor/etc/libnfc-nci.conf
 # RIL
 odm/etc/me_config.xml
 
+# RIL
+system_ext/framework/xiaomi-modem-common.jar
+
 # Sensors
 odm/etc/sensors/config/5cm_blue.png
 odm/etc/sensors/config/5cm_gray.png
