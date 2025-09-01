@@ -25,6 +25,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ApertureOverlayPudding \
     FrameworksResPudding \
+    NfcOverlayMyron \
     PuddingEuiccOverlay \
     SettingsOverlayPudding \
     SettingsProviderOverlayPudding \
