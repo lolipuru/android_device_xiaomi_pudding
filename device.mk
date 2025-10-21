@@ -27,7 +27,9 @@ PRODUCT_PACKAGES += \
     FrameworksResPudding \
     PuddingEuiccOverlay \
     SettingsOverlayPudding \
-    SystemUIResPudding
+    SettingsProviderOverlayPudding \
+    SystemUIResPudding \
+    WifiOverlayPudding
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
