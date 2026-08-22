@@ -20,6 +20,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ApertureOverlayPudding \
     FrameworksResPudding \
+    PuddingEuiccOverlay \
     SettingsOverlayPudding \
     SystemUIResPudding
 
