@@ -11,6 +11,11 @@ $(call inherit-product, device/xiaomi/sm8850-common/common.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/pudding/pudding-vendor.mk)
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator-V1-ndk.vendor \
+    vendor.qti.hardware.camera.offlinecamera-V2-ndk.vendor
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
