@@ -35,6 +35,7 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/configs/properties/odm.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
 
 # Inherit from the proprietary version
 include vendor/xiaomi/pudding/BoardConfigVendor.mk
