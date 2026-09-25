@@ -16,6 +16,10 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator-V1-ndk.vendor \
     vendor.qti.hardware.camera.offlinecamera-V2-ndk.vendor
 
+# Euicc
+PRODUCT_PACKAGES += \
+    XiaomiEuicc
+
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlayPudding \
