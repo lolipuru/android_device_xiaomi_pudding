@@ -1569,8 +1569,11 @@ odm/lib64/libqc_hal.so
 vendor/bin/init.kernel.post_boot-memory.sh
 
 # NFC
+odm/bin/hw/android.hardware.nfc-service-st
+odm/etc/init/nfc-service-st.rc
 odm/etc/libnfc-hal-st.conf:vendor/etc/libnfc-hal-st.conf
 odm/etc/libnfc-nci.conf:vendor/etc/libnfc-nci.conf
+odm/etc/vintf/manifest/nfc-service-st.xml
 
 # RIL
 odm/etc/me_config.xml
