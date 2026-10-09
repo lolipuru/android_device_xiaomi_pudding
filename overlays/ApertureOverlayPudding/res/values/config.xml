@@ -15,6 +15,17 @@
          more camera IDs to ignoreCameraIds. -->
     <bool name="config_ignoreLogicalAuxCameras">false</bool>
 
+    <!-- List of ID of auxiliary cameras that must be ignored by the app. -->
+    <string-array name="config_ignoredAuxCameraIds">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
     <!-- An array of triplets made of (camera ID, qualities, frame rates).
          These video modes will be added to the available
          quality/frame rate combinations of a camera device.
