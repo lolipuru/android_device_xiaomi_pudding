@@ -1408,10 +1408,6 @@ vendor/lib64/vendor.xiaomi.sensor.camera-V1-ndk.so
 product/etc/displayconfig/common_multi_factor_thermal_brightness_control.xml:vendor/etc/displayconfig/common_multi_factor_thermal_brightness_control.xml
 product/etc/displayconfig/display_id_4630946555188253075.xml:vendor/etc/displayconfig/display_id_4630946555188253075.xml
 product/etc/displayconfig/display_id_4630947230830355603.xml:vendor/etc/displayconfig/display_id_4630947230830355603.xml
-product/etc/displayconfig/game_app_category_list_backup.xml:vendor/etc/displayconfig/game_app_category_list_backup.xml
-product/etc/displayconfig/gpp_app_list:vendor/etc/displayconfig/gpp_app_list
-product/etc/displayconfig/multi_factor_thermal_brightness_control.xml:vendor/etc/displayconfig/multi_factor_thermal_brightness_control.xml
-product/etc/displayconfig/rhythmic_app_category_list_backup.xml:vendor/etc/displayconfig/rhythmic_app_category_list_backup.xml
 
 # Displayfeature (configs)
 odm/etc/df_default.xml
