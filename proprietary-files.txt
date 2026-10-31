@@ -1578,6 +1578,10 @@ odm/etc/me_config.xml
 system_ext/framework/xiaomi-modem-common.jar
 
 # Sensors
+odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl
+vendor/lib64/sensors.qsh.so
+
+# Sensors config
 odm/etc/sensors/config/5cm_blue.png
 odm/etc/sensors/config/5cm_gray.png
 odm/etc/sensors/config/5cm_green.png
