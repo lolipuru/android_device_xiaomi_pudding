@@ -1579,6 +1579,7 @@ system_ext/framework/xiaomi-modem-common.jar
 
 # Sensors
 odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl
+vendor/etc/sensors/hals.conf
 vendor/lib64/sensors.qsh.so
 
 # Sensors config
