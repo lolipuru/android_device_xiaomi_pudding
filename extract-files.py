@@ -10,7 +10,6 @@ from extract_utils.fixups_blob import (
     blob_fixups_user_type,
 )
 from extract_utils.fixups_lib import (
-    lib_fixup_remove,
     lib_fixups,
     lib_fixups_user_type,
 )
@@ -32,7 +31,7 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl': blob_fixup()
+'odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v36.so')
         .replace_needed('android.hardware.graphics.common-V6-ndk.so',
                         'android.hardware.graphics.common-V7-ndk.so'),
@@ -48,12 +47,12 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
     (
-        'odm/lib64/libMiEmojiEffect.so',
-        'odm/lib64/libMiVideoFilter.so',
         'odm/lib64/libAncHumanPreviewBokeh.so',
         'odm/lib64/libarcsoft_beautyshot.so',
+        'odm/lib64/libMiEmojiEffect.so',
+        'odm/lib64/libMiPhotoFilter.so',
+        'odm/lib64/libMiVideoFilter.so',
         'odm/lib64/libwa_widelens_undistort.so',
-        'vendor/lib64/libMiPhotoFilter.so'
     ): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
@@ -64,9 +63,6 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_isSupported'),
     (
        'odm/lib64/camera/components/com.qti.node.dewarp.so',
-       'odm/lib64/hw/com.qti.chi.override.so',
-       'odm/lib64/libcamximageformatutils.so',
-       'odm/lib64/libchifeature2.so',
        'odm/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so',
     ): blob_fixup()
         .replace_needed(
@@ -90,6 +86,9 @@ blob_fixups: blob_fixups_user_type = {
             'libdng_sdk-pudding.so'
         ),
     (
+        "odm/bin/hw/vendor.qti.camera.provider-service_64",
+        "odm/lib64/camera/components/com.mi.node.fd.so",
+        "odm/lib64/camera/components/com.qti.node.fd.so",
         "odm/lib64/camera/dynamicplugins/com.xiaomi.plugin.mialgoallinone.so",
         "odm/lib64/camera/plugins/com.xiaomi.plugin.anchor.so",
         "odm/lib64/camera/preloadplugins/com.xiaomi.plugin.asd.so",
@@ -119,19 +118,20 @@ blob_fixups: blob_fixups_user_type = {
         "odm/lib64/camera/preloadplugins/com.xiaomi.plugin.offlineyuvsplit.so",
         "odm/lib64/camera/preloadplugins/com.xiaomi.plugin.offlineyuvwarp.so",
         "odm/lib64/com.xiaomi.plugin.ecdengine.so",
-        "vendor/bin/hw/vendor.qti.camera.provider-service_64",
-        "vendor/lib64/camera/components/com.mi.node.fd.so",
-        "vendor/lib64/camera/components/com.qti.node.fd.so",
-        "vendor/lib64/com.xiaomi.stubv1.camx.so",
-        "vendor/lib64/hw/camera.qcom.core.so",
-        "vendor/lib64/libcamxdumpinforecorder.so",
-        "vendor/lib64/libmicamera_hal_core.so",
-        "vendor/lib64/libsimulation.so",
+        "odm/lib64/com.xiaomi.stubv1.camx.so",
+        "odm/lib64/hw/camera.qcom.core.so",
+        "odm/lib64/libcamxdumpinforecorder.so",
+        "odm/lib64/libmicamera_hal_core.so",
+        "odm/lib64/libsimulation.so",
     ): blob_fixup()
         .replace_needed(
             'libtinyxml2.so',
             'libtinyxml2-v36.so'
         ),
+    'odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl': blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v36.so')
+        .replace_needed('android.hardware.graphics.common-V6-ndk.so',
+                        'android.hardware.graphics.common-V7-ndk.so'),
 }  # fmt: skip
 
 
@@ -141,7 +141,6 @@ module = ExtractUtilsModule(
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
-    check_elf=True,
     add_firmware_proprietary_file=True,
 )
 

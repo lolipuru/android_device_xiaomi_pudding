@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Xiaomi 17 (OS3.0.335.0.XPCMIXM). 
+## are from Xiaomi 17 (OS4.0.2.0.XPCCNXM). 
 
 abl.img;AB
 aop_config.img;AB
